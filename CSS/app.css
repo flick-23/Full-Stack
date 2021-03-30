@@ -1,0 +1,38 @@
+/* universal selector */
+/* *{
+    background-color: cyan;
+} */
+button{
+    font-size:30px;
+    background-color: #a8dadc;;
+}
+
+/* use comma to combine various selectors */
+h1,h2{
+color:#1d3357;
+
+}
+
+/* id selector - id names in whole page must be unique - no space in the name  */
+#signup{
+    background-color: #1d3357;
+    color:#f1faee;
+}
+span{
+    color:#457b9d;
+}
+/* class selector - multiple tags can have this class name  */
+.tag{
+    background-color: #e63946;
+    color:#f1faee;
+    font-size:16px;
+}
+/* descendant selector - used by giving space */
+/* all anchor tags inside of span in post */
+.post span a{
+    color:#457b9d;
+}
+/* all anchor tags inside of a footer */
+footer a{
+    color:#e63946;
+}
