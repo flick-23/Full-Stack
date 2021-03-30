@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="IE=edge"
+    >
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <title>Forms demo</title>
+</head>
+<!-- label is an inline element -->
+<!-- id is like associating the tag with a variable name -->
+<!-- name is used when data is sent to server -->
+
+<body>
+    <form action="/chicken.html">
+        <p>
+            <label for="username">Text Input <input
+                    type="text"
+                    placeholder="Enter some text here"
+                    id="username"
+                    name="username"
+                > </label>
+        </p>
+        <p>
+            <label for="password">Password Input <input
+                    placeholder="Enter your password"
+                    type="password"
+                    id="password"
+                    name="password"
+                > </label>
+        </p>
+        <p>
+            <label for="color">Color Input <input
+                    type="color"
+                    id="color"
+                    name="color"
+                > </label>
+        </p>
+        <p>
+            <label for="number">Number Input <input
+                    type="number"
+                    id="number"
+                    name="num"
+                    placeholder="Go head give me a number"
+                > </label>
+        </p>
+        <p>
+            <label>Time Input <input type="time"> </label>
+        </p>
+        <p><label for="date">Date Input <input
+                    id="date"
+                    type="date"
+                > </label></p>
+
+        <button>SUBMIT</button>
+
+    </form>
+    <hr>
+    <h2>Search Google</h2>
+    <form action="https://www.google.com/search">
+        <input
+            type="text"
+            name="q"
+        >
+        <button>Search google</button>
+    </form>
+    <h2>Search Youtube</h2>
+    <form action="https://www.youtube.com/results">
+        <input
+            type="text"
+            name="search_query"
+        >
+        <button>Search youtube</button>
+    </form>
+
+    <!-- value is something that is passed on after submitting -->
+
+    <h2>More types of inputs</h2>
+    <form action="chicken.html">
+        <input
+            type="checkbox"
+            name="agree"
+            id="agree"
+        >
+        <label for="agree">
+            I agree to everything
+        </label>
+        <p>
+            <label for="xs">XS</label>
+            <input
+                type="radio"
+                name="size"
+                id="xs"
+                value="xs"
+            >
+            <label for="xs">S</label>
+            <input
+                type="radio"
+                name="size"
+                id="s"
+                value="s"
+            >
+            <label for="xs">M</label>
+            <input
+                type="radio"
+                name="size"
+                id="m"
+                value="m"
+            >
+        </p>
+        <p>
+            <label for="meal">Please Select an item</label>
+            <select
+                name="meal"
+                id="meal"
+            >
+                <option value="">Favourite food?</option>
+                <option value="fish">Fish</option>
+                <option value="veg">Vegetarian</option>
+                <option value="steak">Steak</option>
+            </select>
+        </p>
+        <p>
+            <label for="">Amount of Cheese : </label>
+            <input
+                type="range"
+                id="cheese"
+                min="1"
+                max="100"
+                step="1"
+                value="21"
+                name="cheese_level"
+            >
+        </p>
+        <p>
+            <label for="">Any special requests?</label>
+            <br>
+            <textarea
+                type="text"
+                name="request"
+                cols="40"
+                rows="5"
+                id="requests"
+                placeholder="Type something here"
+            >
+            </textarea>
+        </p>
+        <button>Submit</button>
+    </form>
+    <h2>Validation Demo</h2>
+    <form action="chicken.html">
+        <p>
+            <label for="name">Enter name</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                minlength="3"
+                maxlength="15"
+            >
+        </p>
+        <p>
+            <label for="username">Enter Username</label>
+            <input
+                type="text"
+                id="username"
+                name="username"
+                minlength="3"
+                maxlength="15"
+                required
+            >
+        </p>
+        <p>
+            <label for="email">Enter Email</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                required
+            >
+        </p>
+        <p>
+            <label for="urk">Enter URL</label>
+            <input
+                type="url"
+                id="url"
+                name="url"
+            >
+        </p>
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
