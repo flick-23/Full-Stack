@@ -36,3 +36,52 @@ span{
 footer a{
     color:#e63946;
 }
+
+/* any button that comes immediately after input */
+input+button{
+    background-color: pink;
+}
+h2+button{
+    font-size:20px;
+}
+
+/* > -  direct child  or descendant or 1 level down*/
+footer>a{
+    color:#3f999c
+}
+
+/* attribute selector -  */
+input[type="password"] {
+    color:#e63946;
+}
+
+section[class="post"]{
+    background-color: rgb(184, 214, 223);
+}
+
+/* : - PSEUDO class selectors */
+.post button:hover{
+    background-color: #e63946;
+    color:#f1faee
+}
+.post a:hover{
+    text-decoration: dotted;
+}
+.post button:active{
+    background-color: #3f999c;
+}
+.post:nth-of-type(2n){
+    background-color: aquamarine;
+}
+
+/* :: - pseudo elements */
+/* keyword addeed to a selector that lets you style a particular part of selected element */
+h2::first-letter{
+    font-size:50px;
+}
+p::first-line{
+    color:purple;
+}
+p::selection{
+    background-color: gold;
+}
