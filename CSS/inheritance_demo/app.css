@@ -1,0 +1,13 @@
+body{
+    color:purple;
+}
+section{
+    color:aqua;
+}
+form{
+    color:teal;
+}
+/* inherits the property from the nearest parent */
+button,input{
+    color:inherit;
+}
