@@ -1,59 +1,65 @@
-html {
-    font-size: 30px;
+/* percentages are always relative to some other value
+Sometimes its a value from the parent and the other times it's a value from the element itself */
+
+html{
+    font-size:20px;
 }
-#percentages {
+#percentages{
     background-color: #6d6875;
     width: 800px;
     height: 800px;
 }
-
-#percentages div {
-    background-color:#e5989b;
+#percentages div{
+    background-color: #e5989b;
     width: 70%;
     height: 20%;
 }
+h1{
+    font-size: 40px;
+    border:1px solid black;
+    line-height: 200% ;
+}
 
-
-#ems h2 {
+/* em's are relative units  */
+#ems h2{
     font-size: 2em;
-    margin-left: 1em;
+    margin-left:1em;
 }
-#ems h3 {
-    font-size: 1.5em;
-}
-#ems p {
+#ems p{
     font-size: 1em;
 }
-
-#ems {
-    font-size: 15px;
-}
-
-#ems ul {
+#ems h3{
     font-size: 1.5em;
 }
-
-button {
+#ems article{
+    font-size:20px;
+}
+#ems button{
     font-size: 1em;
     padding: 0 1em;
     border-radius: 0.5em;
-    background-color: #2a9d8f;
-    color: white;
+    background-color:#2a9d8f;
+    color:whitesmoke;
 }
 
-
-#rems h2{
-    font-size: 3rem;
+ul{
+    font-size: 1.1em;
 }
+
+/* rems - root ems - relative to the root html element's */
 #rems h3{
-    font-size: 2rem;
+    font-size:3rem;
+}
+#rems h2{
+    font-size:2rem;
 }
 #rems ul{
-    font-size: 1.5rem;
+    font-size:0.8em;
 }
-
 #rems button{
-    font-size: 1.5rem;
+    font-size:1.5rem;
+    padding: 0 1em;
+    border-radius: 0.5em;
+    background-color:#2a9d8f;
+    color:whitesmoke;
 }
-
-
