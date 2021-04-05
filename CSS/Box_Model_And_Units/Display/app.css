@@ -1,27 +1,32 @@
-span {
-    background-color: palevioletred;
-    border: 1px solid black;
-    width: 500px;
-    padding: 50px;
-    margin: 50px;
-}
-
-
-h1 {
-    background-color: paleturquoise;
+/* block display of contents */
+h1{
+    background-color: palegoldenrod;
     border: 1px solid black;
     width: 300px;
-    padding: 50px;
-    margin: 100px;
+    padding:50px;
+    margin:100px;
+    /* html items can easily be hidden */
+    /* display: none; */
+}
+/* inline display of contents */
+span{
+    margin:1px;
+    background-color: aquamarine;
+    border:1px solid black;
+    display: inline;
+    /* with inline elements widht height are ignored */
+    width: 500px;
+    padding:50px;
+    /* margin works only horizontally, vertically its ignore */
+    margin: 50px;
 }
 
-
-div {
+/* inline-block display of contents
+It works like an inline but the widht height and margin are respected */
+div{
     height: 200px;
     width: 200px;
-    background-color: olivedrab;
+    background-color: forestgreen;
     border: 5px solid black;
     display: inline-block;
-    margin: 50px;
-
 }
