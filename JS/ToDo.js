@@ -1,6 +1,5 @@
 //making arrangements for terminal input 
 const prompt = require('prompt-sync')();
-
 console.log("What would you like to do ?");
 let choice = 0, tasks=[], i = 0;
 while(choice!=4){
